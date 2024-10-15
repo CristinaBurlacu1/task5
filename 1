@@ -1,0 +1,88 @@
+Structura proiectului:
+
+    edu.tekwill.academy.computer
+        Computer.java
+    edu.tekwill.academy.computer.components
+        Processor.java
+        Motherboard.java
+        HardDrive.java
+    edu.tekwill.academy.computer.peripherals
+        Monitor.java
+        Mouse.java
+        Keyboard.java
+
+Clasa Computer:
+package edu.tekwill.academy.computer;
+
+import edu.tekwill.academy.computer.components.*;
+import edu.tekwill.academy.computer.peripherals.*;
+
+public class Computer {
+    // Atribute din pachetul components
+    public Processor processor;
+    public Motherboard motherboard;
+    public HardDrive hardDrive;
+
+    // Atribute din pachetul peripherals
+    public Monitor monitor;
+    public Mouse mouse;
+    public Keyboard keyboard;
+
+    public static void main(String[] args) {
+        // Inițializarea unui obiect Computer
+        Computer computer = new Computer();
+
+        // Exemplu de utilizare (inițializările propriu-zise pot varia)
+        computer.processor = new Processor();
+        computer.motherboard = new Motherboard();
+        computer.hardDrive = new HardDrive();
+        computer.monitor = new Monitor();
+        computer.mouse = new Mouse();
+        computer.keyboard = new Keyboard();
+
+        // Exemplu de afișare
+        System.out.println("Computer initialized with all components and peripherals.");
+    }
+}
+
+Clasa Processor:
+package edu.tekwill.academy.computer.components;
+
+public class Processor {
+    // Codul specific procesorului
+}
+
+Clasa Motherboard:
+package edu.tekwill.academy.computer.components;
+
+public class Motherboard {
+    // Codul specific plăcii de bază
+}
+
+Clasa HardDrive:
+package edu.tekwill.academy.computer.components;
+
+public class HardDrive {
+    // Codul specific pentru hard drive
+}
+
+Clasa Monitor:
+package edu.tekwill.academy.computer.peripherals;
+
+public class Monitor {
+    // Codul specific pentru monitor
+}
+
+Clasa Mouse:
+package edu.tekwill.academy.computer.peripherals;
+
+public class Mouse {
+    // Codul specific pentru mouse
+}
+
+Clasa Keyboard:
+package edu.tekwill.academy.computer.peripherals;
+
+public class Keyboard {
+    // Codul specific pentru tastatură
+}
