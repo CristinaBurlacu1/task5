@@ -1,0 +1,25 @@
+public class Circle {
+    // Atributul radius
+    private double radius;
+
+    // Constructor pentru a inițializa raza
+    public Circle(double radius) {
+        this.radius = radius;
+    }
+
+    // Metoda pentru a calcula aria cercului
+    public void calculateArea() {
+        double area = Math.PI * radius * radius;
+        System.out.println("The area of the circle is: " + area);
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Inițializarea unui obiect de tip Circle cu raza 5.0
+        Circle circle = new Circle(5.0);
+
+        // Apelarea metodei calculateArea()
+        circle.calculateArea();
+    }
+}
