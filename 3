@@ -1,0 +1,27 @@
+public class TemperatureConverter {
+
+    // Metoda pentru a converti Celsius în Fahrenheit
+    public double toFahrenheit(double celsius) {
+        return (celsius * 9/5) + 32;
+    }
+
+    // Metoda pentru a converti Fahrenheit în Celsius
+    public double toCelsius(double fahrenheit) {
+        return (fahrenheit - 32) * 5/9;
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        // Inițializarea unui obiect TemperatureConverter
+        TemperatureConverter converter = new TemperatureConverter();
+
+        // Conversia Celsius -> Fahrenheit
+        double fahrenheit = converter.toFahrenheit(25);
+        System.out.println("25°C in Fahrenheit is: " + fahrenheit);
+
+        // Conversia Fahrenheit -> Celsius
+        double celsius = converter.toCelsius(77);
+        System.out.println("77°F in Celsius is: " + celsius);
+    }
+}
